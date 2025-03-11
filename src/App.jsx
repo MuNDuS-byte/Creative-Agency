@@ -12,16 +12,18 @@ import './index.scss'
 
 function App() {
     return (
-        <div className="App">
+        <main className="App">
             <Header />
             <Hero />
-            <AboutUs />
-            <OurServices />
-            <OurPortfolio />
-            <Testimonial />
-            <Collaboration />
+            <section>
+                <AboutUs />
+                <OurServices />
+                <OurPortfolio />
+                <Testimonial />
+                <Collaboration />
+            </section>
             <Footer />
-        </div>
+        </main>
     )
 }
 
