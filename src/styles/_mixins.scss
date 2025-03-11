@@ -1,0 +1,15 @@
+// Миксины
+
+// Миксин для медиа-запросов
+@mixin media($max-width) {
+    @media (max-width: $max-width) {
+        @content;
+    }
+}
+
+// Миксин для display flex
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

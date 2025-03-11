@@ -1,0 +1,113 @@
+@import '../../styles/mixins';
+
+.header {
+    margin-top: 7.2rem;
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        grid-column-gap: clamp(100px, 20vw, 267px);
+
+        // grid-column-gap: 267px;
+    }
+
+    .menu {
+        &__list {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        &__link {
+            text-decoration: none;
+            color: black;
+            font-size: 1.8rem;
+            font-weight: 400;
+
+            &:hover {
+                color: blue;
+            }
+        }
+    }
+
+    .burger {
+        display: none;
+        font-size: 2.5rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .menu_mobile {
+        display: none;
+    }
+}
+
+@include media(980px) {
+    .header {
+        &__content {
+            grid-template-columns: 1fr auto; // Лого + бургер
+            grid-column-gap: 2rem;
+        }
+
+        // Показываем бургер-кнопку
+        .burger {
+            display: block;
+            z-index: 10;
+        }
+
+        &__button {
+            display: none;
+        }
+
+        // Прячем меню по умолчанию
+        .menu {
+            display: none;
+        }
+
+        .menu_mobile {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 280px;
+            height: 100vh;
+            background: white;
+            box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            transition: right 0.3s ease-in-out;
+            z-index: 9;
+
+            &.menu_open {
+                right: 0;
+            }
+
+            &__close {
+                align-self: flex-end;
+                background: none;
+                border: none;
+                font-size: 2rem;
+                cursor: pointer;
+                margin-bottom: 1rem;
+            }
+
+            &__list {
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            &__link {
+                font-size: 1.6rem;
+                color: black;
+                text-decoration: none;
+
+                &:hover {
+                    color: blue;
+                }
+            }
+        }
+    }
+}

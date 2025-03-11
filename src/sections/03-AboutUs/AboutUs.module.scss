@@ -1,0 +1,106 @@
+@import '../../styles/mixins';
+
+.about {
+    margin-top: 15rem;
+    h3,
+    h2 {
+        text-align: center;
+    }
+
+    p {
+        margin-bottom: 2.4rem;
+        line-height: 32px;
+        letter-spacing: 1%;
+        text-align: left;
+    }
+
+    &__content {
+        @include flex-center;
+        gap: 6.5rem;
+        margin-top: 5rem;
+    }
+
+    &__images {
+        flex: 1;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    .mainImage {
+        position: relative;
+        z-index: 2;
+        max-width: 565px;
+        height: auto;
+    }
+
+    .ellipesesGroup {
+        position: absolute;
+        top: -10px;
+        left: -25px;
+        width: 100px;
+        height: auto;
+        z-index: 1;
+    }
+
+    &__info {
+        flex: 1; /* Даем текстовому блоку возможность растягиваться */
+        min-width: 300px; /* Предотвращаем слишком сильное сжатие */
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 2.5rem;
+    }
+}
+
+@include media(980px) {
+    .about {
+        &__content {
+            flex-wrap: wrap-reverse;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            max-width: 65rem;
+            margin-top: 4rem;
+        }
+        &__info {
+            text-align: center;
+        }
+
+        .ellipesesGroup {
+            display: none;
+        }
+
+        &__buttons {
+            justify-content: center;
+        }
+    }
+}
+
+@include media(600px) {
+    .about {
+        &__content {
+            max-width: 50rem;
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .mainImage {
+            max-width: 400px;
+        }
+    }
+}
+
+@include media(450px) {
+    .about {
+        .mainImage {
+            max-width: 100%;
+        }
+        padding: 0 1.5rem;
+    }
+}

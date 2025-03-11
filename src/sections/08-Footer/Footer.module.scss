@@ -1,0 +1,131 @@
+@import '../../styles/mixins';
+
+.footer {
+    margin-top: 15rem;
+    background: rgb(56, 54, 56);
+    width: 100%;
+    padding-top: 13rem;
+    padding-bottom: 1.3rem;
+
+    &__content {
+        display: flex;
+        align-items: flex-start;
+        gap: 6.8rem;
+    }
+
+    &__logo {
+        @include flex-center;
+        border-radius: 20px;
+        background-color: rgb(255, 255, 255);
+        padding: 2rem 2.5rem;
+    }
+
+    &__information {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+    }
+
+    &__list {
+        &ItemSpecial {
+            color: rgb(255, 255, 255);
+            font-size: 2.2rem;
+            font-weight: 700;
+        }
+
+        &Item {
+            color: rgb(165, 164, 164);
+            margin-top: 2rem;
+        }
+
+        li {
+            font-family: 'Quicksand';
+            font-size: 1.8rem;
+            list-style-type: none;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 7rem;
+
+        p {
+            color: rgb(255, 255, 255);
+            font-size: 1.8rem;
+            @include media(425px) {
+                font-size: 1.4rem;
+            }
+        }
+    }
+    &__line {
+        width: 500px;
+        border: 1px solid rgb(255, 255, 255);
+        margin: 1.6rem 0px;
+    }
+
+    .icons {
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+
+        @include media(425px) {
+            gap: 2rem;
+        }
+    }
+
+    .ellipse {
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        border-radius: 50%;
+        @include flex-center;
+    }
+
+    .icon {
+        font-size: 2.3rem;
+    }
+}
+
+@include media(1024px) {
+    .footer {
+        &__information {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+    }
+}
+
+@include media(800px) {
+    .footer {
+        &__content {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@include media(600px) {
+    .footer {
+        &__list {
+            &ItemSpecial {
+                font-size: 1.9rem;
+            }
+            li {
+                font-size: 1.5rem;
+            }
+        }
+
+        &__line {
+            width: 100%;
+        }
+    }
+}
+
+@include media(400px) {
+    .footer {
+        &__information {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}

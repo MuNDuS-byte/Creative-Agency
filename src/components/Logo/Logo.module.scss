@@ -1,0 +1,12 @@
+.Logo {
+    display: flex;
+    gap: 10px;
+    &__big {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    &__small {
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+}

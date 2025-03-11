@@ -1,0 +1,76 @@
+@import '../../styles/mixins';
+
+.services {
+    margin-top: 15rem;
+
+    &__content {
+        @include flex-center;
+        gap: clamp(5rem, 10vw, 15.5rem);
+        flex-wrap: nowrap;
+    }
+
+    &__info {
+        max-width: 520px;
+        text-align: left;
+        flex: 1;
+    }
+
+    h2 {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .Card__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+
+        gap: 4.1rem 3.8rem;
+        flex: 1;
+    }
+
+    &__button {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 3.6rem;
+        cursor: pointer;
+        font-size: 2rem;
+        font-weight: 700;
+        color: rgb(55, 125, 255);
+    }
+}
+
+@include media(1100px) {
+    .services {
+        &__content {
+            display: grid;
+            grid-template-columns: 1fr; /* Одна колонка */
+            justify-items: center;
+            gap: 5rem;
+        }
+
+        &__info {
+            text-align: center;
+            max-width: 90%;
+            width: clamp(320px, 80%, 520px);
+        }
+        .Card__wrapper {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+            justify-content: center;
+        }
+    }
+}
+
+@include media(600px) {
+    .services {
+        .Card__wrapper {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &__button {
+            font-size: 1.6rem;
+        }
+    }
+}

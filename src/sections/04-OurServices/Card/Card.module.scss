@@ -1,0 +1,58 @@
+@import '../../../styles/mixins';
+
+.card {
+    @include flex-center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 3rem;
+    transition: 0.3s;
+    width: 262px;
+    height: 269px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    &.boxShadow {
+        box-shadow: 4px 4px 30px 0px rgba(0, 0, 0, 0.1);
+        background: rgb(255, 255, 255);
+        box-sizing: border-box;
+    }
+
+    .imageWrapper {
+        @include flex-center;
+        width: 85px;
+        height: 85px;
+        border-radius: 50%;
+    }
+
+    img {
+        max-width: 60%; /* Чтобы картинка адаптировалась */
+        max-height: 60%;
+    }
+
+    h3 {
+        color: rgb(29, 29, 29);
+        font-weight: 700;
+        margin-top: 3rem;
+    }
+
+    /* Цвета */
+    .red {
+        background-color: rgb(255, 45, 45);
+    }
+    .green {
+        background-color: rgb(124, 231, 97);
+    }
+    .blue {
+        background-color: rgb(55, 125, 255);
+    }
+    .yellow {
+        background-color: rgb(255, 168, 0);
+    }
+}
+
+@include media(600px) {
+    .card {
+        h3 {
+            font-size: 1.7rem;
+        }
+    }
+}

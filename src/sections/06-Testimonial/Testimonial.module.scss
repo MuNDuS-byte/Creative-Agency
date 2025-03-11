@@ -1,0 +1,43 @@
+@import '../..//styles/mixins';
+
+.testimonial {
+    position: relative;
+    margin-top: 15rem;
+
+    &__ellipses {
+        position: absolute;
+        top: -5rem;
+        left: 20rem;
+    }
+
+    h3,
+    h2 {
+        text-align: center;
+    }
+
+    h2 {
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+    }
+
+    &__content {
+        @include flex-center;
+        position: relative;
+        gap: 5rem;
+    }
+
+    &__ellipsesBottom {
+        position: absolute;
+        bottom: -5rem;
+        right: 1rem;
+    }
+}
+
+@include media(1100px) {
+    .testimonial {
+        &__ellipses,
+        &__ellipsesBottom {
+            display: none;
+        }
+    }
+}
