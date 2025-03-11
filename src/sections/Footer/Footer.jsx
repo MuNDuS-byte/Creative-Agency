@@ -1,10 +1,10 @@
-import Logo from '../../components/Logo/Logo';
-import { LuFacebook } from 'react-icons/lu';
-import { LuInstagram } from 'react-icons/lu';
-import { LuLinkedin } from 'react-icons/lu';
-import { MdOutlineMail } from 'react-icons/md';
-import { LuTwitter } from 'react-icons/lu';
-import styles from './Footer.module.scss';
+import Logo from '../../components/Logo/Logo'
+import { LuFacebook } from 'react-icons/lu'
+import { LuInstagram } from 'react-icons/lu'
+import { LuLinkedin } from 'react-icons/lu'
+import { MdOutlineMail } from 'react-icons/md'
+import { LuTwitter } from 'react-icons/lu'
+import styles from './Footer.module.scss'
 
 const Footer = () => {
     return (
@@ -101,7 +101,7 @@ const Footer = () => {
                 </div>
             </div>
         </footer>
-    );
-};
+    )
+}
 
-export default Footer;
+export default Footer

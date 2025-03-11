@@ -1,5 +1,5 @@
-import styles from './Logo.module.scss';
-import LogoSvg from '../../assets/icons/Group.svg';
+import styles from './Logo.module.scss'
+import LogoSvg from '../../assets/icons/Group.svg'
 
 const Logo = () => {
     return (
@@ -12,7 +12,7 @@ const Logo = () => {
                 <p className={styles.Logo__small}>Creative</p>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default Logo;
+export default Logo

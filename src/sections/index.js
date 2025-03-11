@@ -1,11 +1,11 @@
-import Header from './01-Header/Header';
-import Hero from './02-Hero/Hero';
-import AboutUs from './03-AboutUs/AboutUs';
-import OurServices from './04-OurServices/OurServices';
-import OurPortfolio from './05-OurPortfolio/OurPortfolio';
-import Testimonial from './06-Testimonial/Testimonial';
-import Collaboration from './07-Collaboration/Collaboration';
-import Footer from './08-Footer/Footer';
+import Header from './Header/Header'
+import Hero from './Hero/Hero'
+import AboutUs from './AboutUs/AboutUs'
+import OurServices from './OurServices/OurServices'
+import OurPortfolio from './OurPortfolio/OurPortfolio'
+import Testimonial from './Testimonial/Testimonial'
+import Collaboration from './Collaboration/Collaboration'
+import Footer from './Footer/Footer'
 
 export {
     Header,
@@ -16,4 +16,4 @@ export {
     Testimonial,
     Collaboration,
     Footer,
-};
+}

@@ -7,8 +7,8 @@ import {
     Testimonial,
     Collaboration,
     Footer,
-} from './sections';
-import './index.scss';
+} from './sections'
+import './index.scss'
 
 function App() {
     return (
@@ -22,7 +22,7 @@ function App() {
             <Collaboration />
             <Footer />
         </div>
-    );
+    )
 }
 
-export default App;
+export default App

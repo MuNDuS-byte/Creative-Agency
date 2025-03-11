@@ -1,6 +1,6 @@
-import Button from '../../components/Buttton/Button';
-import styles from './AboutUs.module.scss';
-import { heroEllipseRed, aboutImage } from '../../assets/images/index';
+import Button from '../../components/Button/Button'
+import styles from './AboutUs.module.scss'
+import { heroEllipseRed, aboutImage } from '../../assets/images/index'
 
 const AboutUs = () => {
     return (
@@ -44,7 +44,7 @@ const AboutUs = () => {
                 </div>
             </div>
         </section>
-    );
-};
+    )
+}
 
-export default AboutUs;
+export default AboutUs

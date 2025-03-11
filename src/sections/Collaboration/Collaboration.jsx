@@ -1,9 +1,9 @@
-import Button from '../../components/Buttton/Button';
+import Button from '../../components/Button/Button'
 import {
     collaborationFirstImage,
     collaborationSecondImage,
-} from '../../assets/images/index';
-import styles from './Collaboration.module.scss';
+} from '../../assets/images/index'
+import styles from './Collaboration.module.scss'
 
 const Collaboration = () => {
     return (
@@ -27,7 +27,7 @@ const Collaboration = () => {
                 </div>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default Collaboration;
+export default Collaboration

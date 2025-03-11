@@ -1,6 +1,6 @@
-import Card from './Card/Card';
-import ArrowRight from '../../assets/icons/ArrowRight.svg';
-import styles from './OurServices.module.scss';
+import Card from './Card/Card'
+import ArrowRight from '../../assets/icons/ArrowRight.svg'
+import styles from './OurServices.module.scss'
 
 const OurServices = () => {
     return (
@@ -38,7 +38,7 @@ const OurServices = () => {
                 </div>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default OurServices;
+export default OurServices

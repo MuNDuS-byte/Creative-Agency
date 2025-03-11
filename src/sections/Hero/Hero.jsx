@@ -90,15 +90,15 @@
 
 // export default Hero;
 
-import styles from './Hero.module.scss';
+import styles from './Hero.module.scss'
 import {
     heroImage,
     heroEllipseBlue,
     heroEllipseRed,
     reviewerAvatar,
-} from '../../assets/images';
-import Star from '../../assets/icons/Star.svg';
-import Button from '../../components/Buttton/Button';
+} from '../../assets/images'
+import Star from '../../assets/icons/Star.svg'
+import Button from '../../components/Button/Button'
 
 const Hero = () => {
     return (
@@ -169,15 +169,15 @@ const Hero = () => {
                             </div>
                         </div>
                         <p>
-                            “ This team is really the best in its field. I don't
-                            regret working with them and will come back again,
-                            thanks. “
+                            “ This team is really the best in its field. I
+                            don&#39;t regret working with them and will come
+                            back again, thanks. “
                         </p>
                     </div>
                 </div>
             </div>
         </section>
-    );
-};
+    )
+}
 
-export default Hero;
+export default Hero

@@ -1,10 +1,10 @@
-import { useState } from 'react';
-import styles from './Header.module.scss';
-import Button from '../../components/Buttton/Button';
-import Logo from '../../components/Logo/Logo';
+import { useState } from 'react'
+import styles from './Header.module.scss'
+import Button from '../../components/Button/Button'
+import Logo from '../../components/Logo/Logo'
 
 const Header = () => {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false)
 
     return (
         <header className={styles.header}>
@@ -105,7 +105,7 @@ const Header = () => {
                 </div>
             </div>
         </header>
-    );
-};
+    )
+}
 
-export default Header;
+export default Header

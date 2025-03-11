@@ -1,6 +1,6 @@
-import Card from './Card/Card';
-import styles from './Testimonial.module.scss';
-import testimonialGroupEllipses from '../../assets/images/testimonialGroupEllipses.png';
+import Card from './Card/Card'
+import styles from './Testimonial.module.scss'
+import testimonialGroupEllipses from '../../assets/images/testimonialGroupEllipses.png'
 
 const Testimonial = () => {
     return (
@@ -26,7 +26,7 @@ const Testimonial = () => {
                 />
             </div>
         </section>
-    );
-};
+    )
+}
 
-export default Testimonial;
+export default Testimonial

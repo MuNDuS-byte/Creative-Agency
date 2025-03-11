@@ -1,9 +1,9 @@
-import Button from '../../components/Buttton/Button';
-import portfolioBigImage from '../../assets/images/portfolioBigImage.png';
-import portfolioSmallLeftImage from '../../assets/images/portfolioSmallLeftImage.png';
-import portfolioSmallRightImage from '../../assets/images/portfolioSmallRightImage.png';
-import portfolioEllipses from '../../assets/images/portfolioEllipses.png';
-import styles from './OurPortfolio.module.scss';
+import Button from '../../components/Button/Button'
+import portfolioBigImage from '../../assets/images/portfolioBigImage.png'
+import portfolioSmallLeftImage from '../../assets/images/portfolioSmallLeftImage.png'
+import portfolioSmallRightImage from '../../assets/images/portfolioSmallRightImage.png'
+import portfolioEllipses from '../../assets/images/portfolioEllipses.png'
+import styles from './OurPortfolio.module.scss'
 
 const OurPortfolio = () => {
     return (
@@ -45,7 +45,7 @@ const OurPortfolio = () => {
                 </div>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default OurPortfolio;
+export default OurPortfolio

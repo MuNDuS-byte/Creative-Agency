@@ -1,4 +1,4 @@
-import styles from './Button.module.scss';
+import styles from './Button.module.scss'
 
 const Button = ({ text, dark }) => {
     return (
@@ -9,7 +9,7 @@ const Button = ({ text, dark }) => {
                 {text}
             </button>
         </>
-    );
-};
+    )
+}
 
-export default Button;
+export default Button

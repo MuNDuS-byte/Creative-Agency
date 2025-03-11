@@ -1,5 +1,5 @@
-import { testimonialEllipses } from '../../../assets/images/index';
-import styles from './Card.module.scss';
+import { testimonialEllipses } from '../../../assets/images/index'
+import styles from './Card.module.scss'
 
 const Card = ({ mobile }) => {
     return (
@@ -13,10 +13,10 @@ const Card = ({ mobile }) => {
             </div>
             <p className={styles.card__paragraph}>
                 There are many variations passages of Lorem Ipsum majority some
-                by words which don't look
+                by words which don&#39;t look
             </p>
         </div>
-    );
-};
+    )
+}
 
-export default Card;
+export default Card
